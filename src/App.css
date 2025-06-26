@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+.center-blue-text{
+  text-align: center;
+  vertical-align: center;
+  color: cadetblue;
+  animation: pulse 2s infinite;
+}
+.center-blue-text:hover{
+  color: #646cff;
+}
