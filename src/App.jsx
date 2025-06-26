@@ -9,16 +9,18 @@ function App() {
   return (
     <>
         <div>
-            <h1 className="text-center">In Development</h1>
-            <img src={reactLogo} alt="React Logo" />
-            <img src={viteLogo} alt="vite logo" />
-            <br/>
-            <br/>
-            <br/>
-            <h4 className="center-blue-text">This website was coded by Lucas White for HackClub Summer Of Making 2025</h4>
+            <div className="header-div">
+                <h1 className={"center-blue-text"}>SimilarSizeTo</h1>
 
-
-        </>
+                <h3 className={"subtitle"}>A website where you can compare measurements to real-world things!</h3>
+            </div>
+            <a href={"https://react.dev/"}>
+            <img className={"img-builtonreact"} src={reactLogo} alt="react logo" />
+            </a>
+            <div className={"div-main-homepage"}>
+                <button className={"btn-get-started"}>Get Started</button>
+            </div>
+        </div>
     </>
   )
 }
