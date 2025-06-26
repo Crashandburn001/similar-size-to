@@ -1,3 +1,8 @@
+# Coded for Summer Of Making 2025
+You can win free prizes for working hard on code!
+Sign up here:
+## https://summer.hack.club/b3x
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
