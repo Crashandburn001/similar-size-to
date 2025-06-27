@@ -27,6 +27,7 @@ function HomePage() {
                     <Link to="/compare">
                         <button className="btn-get-started">Get Started</button>
                     </Link>
+                    <br/>
                 </div>
             </div>
         </>
