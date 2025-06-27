@@ -110,3 +110,27 @@
   align-content: center;
   justify-content: center;
 }
+
+.crd-input{
+  width: 120%;
+  color: cadetblue;
+  top: 0;
+  left: 0;
+  position: static;
+
+}
+
+.btn-submit{
+  margin-top: 1em;
+  align-self: center;
+}
+
+.inputboxes{
+  width: 200px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: white;
+  text-align: center;
+}
