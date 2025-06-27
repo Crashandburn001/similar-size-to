@@ -1,28 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// App.jsx
+import { Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage.jsx'
+import ComparePage from './pages/ComparePage.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-        <div>
-            <div className="header-div">
-                <h1 className={"center-blue-text"}>SimilarSizeTo</h1>
-
-                <h3 className={"subtitle"}>A website where you can compare measurements to real-world things!</h3>
-            </div>
-            <a href={"https://react.dev/"}>
-            <img className={"img-builtonreact"} src={reactLogo} alt="react logo" />
-            </a>
-            <div className={"div-main-homepage"}>
-                <button className={"btn-get-started"}>Get Started</button>
-            </div>
-        </div>
-    </>
-  )
+    return (
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/compare" element={<ComparePage />} />
+        </Routes>
+    )
 }
 
 export default App
