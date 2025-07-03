@@ -112,17 +112,21 @@
 }
 
 .crd-input{
-  width: 120%;
+  width: 94%;
   color: cadetblue;
-  top: 0;
-  left: 0;
-  position: static;
-
+  position: fixed;
+  top: 25%;
+  margin: 0;
+  margin-left: 3%;
+  padding: 0;
+  border: none;
+  outline: none;
 }
 
 .btn-submit{
   margin-top: 1em;
   align-self: center;
+  width: 100%;
 }
 
 .inputboxes{
@@ -132,5 +136,15 @@
   padding: 0;
   border: none;
   outline: white;
+  
   text-align: center;
+  background-color: #213547;
+
 }
+.card-text{
+  text-align: center;
+  position: relative;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
