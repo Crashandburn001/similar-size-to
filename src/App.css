@@ -1,8 +1,9 @@
 #root {
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -159,12 +160,12 @@
 .crd-display {
   text-align: center;
   position: relative;
-  width: 46vw;
+  width: 30vw;  /* makes 3 cards fit in a row nicely */
   height: 30vh;
   margin: 0;
   margin-top: 9vh;
-  padding: 0;
   top: 50%;
+  box-sizing: border-box;
 }
 
 .crd-display-header {
@@ -175,16 +176,19 @@
   margin: 0;
 }
 
-/* ✅ Grid for desktop */
+/* Grid layout for PC: 3 columns, 2 rows (6 cards total) */
 .results-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto); /* 2 rows */
   gap: 20px;
   margin: 3%;
   padding-top: 20px;
+  justify-items: center;
+  justify-content: center;
 }
 
-/* ✅ Responsive overrides for mobile */
+/* Responsive overrides for mobile */
 @media (max-width: 768px) {
   .center-blue-text {
     font-size: 12vw;
@@ -218,14 +222,16 @@
     font-size: 1rem;
   }
 
+  /* 1 column, 4 rows for mobile */
   .results-grid {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto); /* 4 rows */
     margin: 1rem;
     gap: 1.5rem;
   }
 
   .crd-display {
-    width: 95vw;
+    width: 95vw; /* fills almost whole width on mobile */
     height: auto;
     margin: 0 auto;
     top: auto;

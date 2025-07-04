@@ -46,10 +46,10 @@ const comparisonExamples = {
         { label: "Floor Area of a Supermarket", value: 1500, unit: "m²", icon: "🛒" },
         { label: "Area of a Football Field", value: 5400, unit: "m²", icon: "🏈" },
         { label: "Area of a Soccer Field", value: 7140, unit: "m²", icon: "⚽" },
-        { label: "Area of a Small Park", value: 10_000, unit: "m²", icon: "🌳" },
-        { label: "Area of a Manhattan Block", value: 80_000, unit: "m²", icon: "🏙️" },
-        { label: "Floor Area of an Airport Terminal", value: 200_000, unit: "m²", icon: "🛫" },
-        { label: "Area of Central Park", value: 3_410_000, unit: "m²", icon: "🌲" }
+        { label: "Area of a Small Park", value: 10000, unit: "m²", icon: "🌳" },
+        { label: "Area of a Manhattan Block", value: 80000, unit: "m²", icon: "🏙️" },
+        { label: "Floor Area of an Airport Terminal", value: 200000, unit: "m²", icon: "🛫" },
+        { label: "Area of Central Park", value: 3410000, unit: "m²", icon: "🌲" }
     ],
 
     mass: [
@@ -75,7 +75,6 @@ const comparisonExamples = {
         { label: "Mass of a T-Rex", value: 8000, unit: "kg", icon: "🦖" }
     ]
 };
-
 
 const unitToBase = {
     "millimetres (mm)": { factor: 0.001, type: "length" },
@@ -138,7 +137,7 @@ function ComparePage() {
 
         const sorted = [...allExamples].sort((a, b) =>
             Math.abs(baseValue - a.value) - Math.abs(baseValue - b.value)
-        ).slice(0, 4); // closest 4
+        ).slice(0, 6); // closest 6 instead of 4
 
         const results = sorted.map((example) => {
             const ratio = baseValue / example.value;
