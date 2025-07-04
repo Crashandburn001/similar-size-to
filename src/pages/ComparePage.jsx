@@ -23,7 +23,6 @@ function ComparePage() {
             return;
         }
 
-        // 🔽 Replace this with actual logic or navigation
         alert(`You entered: ${size} ${unit}`);
     }
 
@@ -102,6 +101,29 @@ function ComparePage() {
                         </form>
                     </CardContent>
                 </Card>
+
+                <div className="results-grid">
+                    <Card sx={{ backgroundColor: '#444444' }} className="crd-display">
+                        <CardContent>
+                            <p className="crd-display-header"><b>Comparison 1</b></p>
+                        </CardContent>
+                    </Card>
+                    <Card sx={{ backgroundColor: '#444444' }} className="crd-display">
+                        <CardContent>
+                            <p className="crd-display-header"><b>Comparison 2</b></p>
+                        </CardContent>
+                    </Card>
+                    <Card sx={{ backgroundColor: '#444444' }} className="crd-display">
+                        <CardContent>
+                            <p className="crd-display-header"><b>Comparison 3</b></p>
+                        </CardContent>
+                    </Card>
+                    <Card sx={{ backgroundColor: '#444444' }} className="crd-display">
+                        <CardContent>
+                            <p className="crd-display-header"><b>Comparison 4</b></p>
+                        </CardContent>
+                    </Card>
+                </div>
             </div>
         </div>
     )
