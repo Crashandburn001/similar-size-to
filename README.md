@@ -2,6 +2,7 @@
 You can win free prizes for working hard on code!
 Sign up here:
 ## https://summer.hack.club/b3x
+{{ wakatimeDoubleCategoryBar "💾 Languages:" wakatimeData.Languages "💼 Projects:" wakatimeData.Projects 5 }}
 
 # React + Vite
 
