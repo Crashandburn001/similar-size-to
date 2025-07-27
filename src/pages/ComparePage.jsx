@@ -4,6 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { CardActions } from "@mui/material";
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';  // Correct import casing
 
 const comparisonExamples = {
     length: [
@@ -161,6 +162,12 @@ function ComparePage() {
 
     return (
         <div>
+            <Helmet>
+                <title>Compare Sizes | Similar Size To Me</title>
+                <meta name="description" content="Compare object sizes to real-world equivalents like soccer balls, dice, and furniture." />
+                <link rel="canonical" href="https://similar-size-to.me/compare" />
+            </Helmet>
+
             <div className="header-div">
                 <Link to='/'>
                     <h1 className="center-blue-text">SimilarSizeTo</h1>
